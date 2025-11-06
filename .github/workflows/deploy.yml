@@ -29,4 +29,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          publish_branch: gh-pages # <-- add this line
+          publish_branch: gh-pages # <-- ensure this line added
+          force_orphan: true # <-- ensures clean gh-pages branch
